@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('/static/index.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 300px;
+            font-size: 50px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .navbar-glass {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            backdrop-filter: blur(10px); /* Blur effect */
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+        }
+        .navbar-brand {
+            letter-spacing: 3px;
+            color: #ffffff;
+            font-size: 2.5rem; /* Increase font size */
+        }
+
+        .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* Set nav link color to white */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffffff; /* Maintain white color on hover */
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 50px;
+            font-size: 30px; /* Increase size of nav items */
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav .nav-item {
+                margin: 0; /* Remove margin in mobile view for better space usage */
+                color: white;
+            }
+            .container {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+        }
+
+        @media (max-width: 700px) {
+            .navbar-brand {
+                font-size: 18px; /* Smaller font size for brand logo on very small screens */
+            }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            border-radius: 10px;
+            backdrop-filter: blur(10px); /* Blur effect */
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            width: 80%; /* Decrease width */
+            margin-top: 5px; /* Closer to navbar */
+        }
+
+        h1, p {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-glass">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cognivault</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01"
+                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup">Sign-up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="glass mt-3">
+        <h1>WELCOME!</h1>
+        <p style="font-size: 20px;">
+            This platform centralizes AI and DS research papers, enabling users to upload, search, and review academic work. With peer review, role-based access, and citation tools, it ensures quality and reliability. Collaborative tools and analytics foster research collaboration and track impact, benefiting both learners and researchers.
+        </p>
+    </div>
+</body>
+</html>

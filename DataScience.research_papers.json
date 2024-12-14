@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "675cda30a766ded998e04a50"
+  },
+  "username": "khushi",
+  "name": "Datascience",
+  "title": "tutorial",
+  "author": "Jeff Hammerbacher",
+  "description": "it tells about the basics of data science",
+  "file_id": {
+    "$oid": "675cda30a766ded998e04a4e"
+  }
+},
+{
+  "_id": {
+    "$oid": "675cdaa7a766ded998e04a53"
+  },
+  "username": "khushi",
+  "name": "AI",
+  "title": "Global AI",
+  "author": "Isaac Asimov",
+  "description": "this gives global use of Artifical Intelligence",
+  "file_id": {
+    "$oid": "675cdaa7a766ded998e04a51"
+  }
+},
+{
+  "_id": {
+    "$oid": "675d0594f4600ec701360601"
+  },
+  "username": "khushi",
+  "name": "AI",
+  "title": "COVID-19 Open Research Dataset Challenge (CORD-19)",
+  "author": "Isaac Asimov",
+  "description": "In response to the COVID-19 pandemic, the White House and a coalition of leading research groups have prepared the COVID-19 Open Research Dataset (CORD-19). CORD-19 is a resource of over 1,000,000 scholarly articles, including over 400,000 with full text, about COVID-19, SARS-CoV-2, and related coronaviruses. This freely available dataset is provided to the global research community to apply recent advances in natural language processing and other AI techniques to generate new insights in support of the ongoing fight against this infectious disease. There is a growing urgency for these approaches because of the rapid acceleration in new coronavirus literature, making it difficult for the medical research community to keep up.",
+  "file_id": {
+    "$oid": "675d0594f4600ec7013605ff"
+  }
+},
+{
+  "_id": {
+    "$oid": "675d08107cd1eb293b6ec39f"
+  },
+  "username": "khushi",
+  "name": "AI",
+  "title": "COVID-19 Open Research Dataset Challenge (CORD-19)",
+  "author": "Isaac Asimov",
+  "description": "ffaefefef",
+  "file_id": {
+    "$oid": "675d08107cd1eb293b6ec39d"
+  }
+}]

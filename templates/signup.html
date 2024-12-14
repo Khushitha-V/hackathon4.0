@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('/static/two.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px; /* Medium width */
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            color: white; /* Text color */
+            border: 5px solid; /* Border width */
+            border-image: linear-gradient(to right, #ee93a8, #89d5e6) 1; /* Gradient border */
+        }
+        h2 {
+            text-align: center;
+            color: white;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .form-check-label, .form-check-input {
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .btn-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn-container a {
+            display: block;
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar-brand {
+            letter-spacing: 3px;
+            color: #c24244;
+        }
+
+        .navbar-brand:hover {
+            color: #c24244;
+        }
+
+        .navbar-scroll .nav-link,
+        .navbar-scroll .fa-bars {
+            color: #7f4722;
+        }
+
+        .navbar-scrolled .nav-link,
+        .navbar-scrolled .fa-bars {
+            color: #7f4722;
+        }
+
+        .navbar-scrolled {
+            background-color: #7e736f;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav .nav-item {
+                margin: 0; /* Remove margin in mobile view for better space usage */
+            }
+            .container {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+        }
+
+        @media (max-width: 700px) {
+            .navbar-brand {
+                font-size: 18px; /* Smaller font size for brand logo on very small screens */
+            }
+        }
+        .welcome {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Create an Account</h2>
+        <form method="POST" action="/signup">
+            <div class="inp">
+                <input type="text" name="username" placeholder="Enter your username" class="form-control">
+            </div>
+            <div class="inp">
+                <input type="password" name="password" placeholder="Create password" class="form-control"/>
+            </div>
+            <div class="inp">
+                <input type="password" name="cpassword" placeholder="Confirm password" class="form-control"/>
+            </div>
+            <div class="inp">
+                <input type="email" name="email" placeholder="Enter your email" class="form-control"/>
+            </div>
+            <div class="inp">
+                <label>Gender:</label>
+                <div class="form-check">
+                    <input type="radio" name="gender" value="male" class="form-check-input" id="male">
+                    <label for="male" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="gender" value="female" class="form-check-input" id="female">
+                    <label for="female" class="form-check-label">Female</label>
+                </div>
+            </div>
+            <div class="inp">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" class="form-control"/>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+            </div>
+        </form>
+        <div class="btn-container">
+            <a href="/login" class="btn btn-success w-100 mt-3">Login</a>
+        </div>
+    </div>
+</body>
+</html>

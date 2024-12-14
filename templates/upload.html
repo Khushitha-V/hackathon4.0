@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Paper Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('/static/two.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container-form {
+            max-width: 400px; /* Medium width */
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            color: white; /* Text color */
+            border: 5px solid; /* Border width */
+            border-image: linear-gradient(to right, #ee93a8, #89d5e6) 1; /* Gradient border */
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+        input[type="text"], input[type="file"], textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        textarea {
+            height: 00px; /* Medium height */
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .navbar-brand {
+            letter-spacing: 3px;
+            color: #c24244;
+        }
+
+        .navbar-brand:hover {
+            color: #c24244;
+        }
+
+        .navbar-scroll .nav-link,
+        .navbar-scroll .fa-bars {
+            color: #7f4722;
+        }
+
+        .navbar-scrolled .nav-link,
+        .navbar-scrolled .fa-bars {
+            color: #7f4722;
+        }
+
+        .navbar-scrolled {
+            background-color: #7e736f;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 50px;
+        }
+
+        @media (max-width: 700px) {
+            .navbar-nav .nav-item {
+                margin: 0; /* Remove margin in mobile view for better space usage */
+            }
+            .container-form {
+                padding: 10px;/* Reduce padding for smaller screens */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .navbar-brand {
+                font-size: 18px; /* Smaller font size for brand logo on very small screens */
+            }
+        }
+        .welcome {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-form">
+        <h1>Upload Research Paper</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div>
+                <label for="research-paper">Research Paper:</label>
+                <input type="file" id="research-paper" name="research-paper" accept=".pdf, .txt" required>
+            </div>
+            <div class="btn-success">
+                <button type="submit" class="btn btn-success">Upload</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
